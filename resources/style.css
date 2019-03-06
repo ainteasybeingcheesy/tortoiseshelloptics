@@ -53,6 +53,10 @@ header nav span {
  margin-right: 2rem;
 }
 
+.menu-button {
+  display: none;
+}
+
 header nav a {
   color: white;
   text-decoration: none
@@ -137,6 +141,9 @@ header nav a {
 
 footer {
   background-color: azure;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 4rem;
 }
 
 footer img {
@@ -144,7 +151,112 @@ footer img {
   margin-right: 1rem;
 }
 
-footer {
-  align-items: center;
-  padding: 4rem;
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  .banner-main {
+    height: 22rem;
+  }
+
+  .banner-text {
+    margin-top: 5rem;
+  }
+
+  .banner-text h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  .menu-button {
+    display: inline-block;
+  }
+
+  header nav span {
+    display: none;
+  }
+
+  .banner-main {
+    height: 17rem;
+    background-position: left;
+  }
+
+  .banner-text {
+    margin-top: 9rem;
+  }
+
+  .banner-text h1 {
+    width: 100%;
+    padding: 1rem 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .banner-services .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-services {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .banner-services .icons h4 {
+    font-size: 0.77rem;
+  }
+
+  .fitting,
+  .delivery {
+    margin-top: 1.54rem;
+  }
+
+  .icons {
+    height: inherit;
+  }
+
+  .icons-image {
+    margin-bottom: 1.54rem;
+  }
+
+  .philosophy,
+  .appointments {
+    width: 100%;
+  }
+
+  .info .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .philosophy h4,
+  .appointments h4 {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .philosophy p,
+  .appointments p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
 }
